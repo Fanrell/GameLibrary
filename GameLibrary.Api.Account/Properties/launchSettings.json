@@ -9,12 +9,12 @@
     }
   },
   "profiles": {
-    "GameLibrary.Api.Account": {
+    "GameLibrary.Api.Account.Dev": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
       "launchUrl": "swagger",
-      "applicationUrl": "https://localhost:7133;http://localhost:5057",
+      "applicationUrl": "https://localhost:4011",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
