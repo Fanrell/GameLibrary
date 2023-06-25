@@ -1,3 +1,5 @@
+using GameLibrary.Core.DatabaseContext;
+
 namespace GameLibrary.DbMigrator
 {
     public class Program
@@ -5,9 +7,10 @@ namespace GameLibrary.DbMigrator
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            var app = builder.Build();
 
-            app.MapGet("/", () => "Hello World!");
+            builder.Services.AddDbContext<GameLibraryDbContext>();
+
+            var app = builder.Build();
 
             app.Run();
         }
